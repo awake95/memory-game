@@ -52,6 +52,7 @@ body {
         visibility: hidden;
         position: absolute;
         z-index: -1;
+        left: -99999px;
     }
 
     &:focus,
@@ -154,26 +155,19 @@ body {
 
 @media (max-width: 991px) {
     .card {
-        padding: 20px;
+        padding: 0;
 
         &__item {
-            width: calc(50% - 20px);
-            padding: 3em 20px;
+            width: calc(50% - 5px);
             background: #ffffff;
+            margin-bottom: 10px
         }
     }
 }
 
 
 @media (max-width: 767px) {
-    .card {
-        padding: 10px;
-
-        &__item {
-            width: calc(50% - 5px);
-            padding: 20px 5px;
-            background: #ffffff;
-            margin-bottom: 10px;
-        }
+    .memory-game {
+        padding: 20px;
     }
 }

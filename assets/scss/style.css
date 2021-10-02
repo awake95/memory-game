@@ -50,6 +50,7 @@ body {
   visibility: hidden;
   position: absolute;
   z-index: -1;
+  left: -99999px;
 }
 .button:focus, .button:active {
   outline: none;
@@ -134,22 +135,16 @@ body {
 
 @media (max-width: 991px) {
   .card {
-    padding: 20px;
-  }
-  .card__item {
-    width: calc(50% - 20px);
-    padding: 3em 20px;
-    background: #ffffff;
-  }
-}
-@media (max-width: 767px) {
-  .card {
-    padding: 10px;
+    padding: 0;
   }
   .card__item {
     width: calc(50% - 5px);
-    padding: 20px 5px;
     background: #ffffff;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .memory-game {
+    padding: 20px;
   }
 }
